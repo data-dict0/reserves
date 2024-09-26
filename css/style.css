@@ -1,0 +1,149 @@
+html,
+body {
+  font: 'Roboto';
+  overflow-x: hidden;
+  margin: 10px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.title-container {
+  position: relative;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.top-image-container {
+  margin-bottom: 27px;
+  position: relative;
+  text-align: center;
+}
+
+.subhead-image-container {
+  margin-bottom: 15px;
+  position: relative;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.top-image-container > img {
+  max-width: 40%;
+  text-align: center;
+}
+
+.subhead-image-container > img {
+  max-width: 30%;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+a {
+  text-decoration-color: #212529;
+  color: #212529;
+}
+
+.title {
+  text-align: center !important;
+  position: absolute;
+  left: 18%;
+  right: 18%;
+  top: 30%;
+  color: #333333;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 0 auto;
+}
+
+.dek-container {
+  text-align: center;
+  padding-bottom: 50px;
+  position: relative;
+  margin: 0 auto;
+  top: 10%;
+}
+
+.dek {
+  inline-size: 500px;
+  /* display: flex; */
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin-bottom: 0 auto;
+  color: #333333;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.first-letter {
+  font-size: 65px;
+  line-height: 55px;
+  float: left;
+}
+
+.caption {
+  font-size: 11px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+/* When it's less than 500 pixels wide */
+
+
+@media only screen and (max-width: 450px) and (min-width: 300px) {
+  .title {
+    text-align: center !important;
+    justify-content: center;
+    position: absolute;
+    color: #212529;
+    font-size: 20px;
+    font-weight: bold;
+    background: #ffffff;
+  }
+
+  .top-image-container > img {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .subhead-image-container > img {
+    max-width: 100%;
+    text-align: center;
+  }
+  
+
+  .first-letter {
+    font-size: 50px;
+    line-height: 40px;
+    float: left;
+    text-indent: 0;
+  }
+
+  .dek-container {
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    display: inline-block;
+    padding-bottom: 12em
+  }
+  
+  .dek {
+    text-align: center !important;
+    inline-size: 350px;
+    display: inline-block;
+    margin: 0 auto;
+    position: absolute;
+    color: #333333;
+    font-size: 16px;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
