@@ -100,10 +100,13 @@ a {
     text-align: center !important;
     justify-content: center;
     position: absolute;
+    left: 0;
+    right: 0;
     color: #212529;
-    font-size: 20px;
+    font-size: clamp(18px, 6vw, 26px);
     font-weight: bold;
     background: #ffffff;
+    white-space: nowrap;
   }
 
   .top-image-container > img {
@@ -128,17 +131,15 @@ a {
     text-align: center;
     position: relative;
     margin: 0 auto;
-    display: inline-block;
-    padding-top: 5em;
-    padding-bottom: 10em
+    top: 50;
+    padding-bottom: 50px;
   }
   
   .dek {
     text-align: center !important;
-    inline-size: 350px;
+    inline-size: min(350px, 100%);
     display: inline-block;
     margin: 0 auto;
-    position: absolute;
     color: #333333;
     font-size: 16px;
   }
